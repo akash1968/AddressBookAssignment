@@ -7,17 +7,17 @@ namespace AddressBook
 {
     class AddressBook
     {
-        private List<Constr> list = new List<Constr>();
-       // public List<Constr> GetList()
-      //  {
-      //      return list;
-      //  }
-       public void AddAddress(Constr c)
-       {
+        private List<Class1> list = new List<Class1>();
+        public List<Class1> GetList()
+        {
+            return list;
+        }
+        public void AddAddress(Class1 c)
+        {
             list.Add(c);
 
-       }
-        public List<Constr> ViewAddressBook()
+        }
+        public List<Class1> ViewAddressBook()
         {
             return list;
         }
