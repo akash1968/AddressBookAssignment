@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AddressBook
 {
-    class Constr
+    class Class1
     {
         private string name;
         private string address;
@@ -14,7 +14,7 @@ namespace AddressBook
         private string phoneNo;
         private string email;
 
-        public Constr(string name, string address, string city, string state, string zip, string phoneNo, string email)
+        public Class1(string name, string address, string city, string state, string zip, string phoneNo, string email)
         {
             this.name = name;
             this.address = address;

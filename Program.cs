@@ -38,22 +38,22 @@ namespace AddressBook
                     Console.WriteLine("Enter your email : ");
                     String mailID = Console.ReadLine();
 
-                    Constr c = new Constr(name, address, city, state, zip, contactNo, mailID);
+                    Class1 c = new Class1(name, address, city, state, zip, contactNo, mailID);
 
                     ab.AddAddress(c);
                 }
                 else if (choice == 2)
                 {
-                    List<Constr> li = ab.ViewAddressBook();
-                    foreach (Constr i in li)
+                    List<Class1> li = ab.ViewAddressBook();
+                    foreach (Class1 cl in li)
                     {
-                        Console.WriteLine("Name : " + i.GetName());
-                        Console.WriteLine("Address : " + i.GetAddress());
-                        Console.WriteLine("City : " + i.GetCity());
-                        Console.WriteLine("State : " + i.GetState());
-                        Console.WriteLine("zip : " + i.GetZip());
-                        Console.WriteLine("Contact No. : " + i.GetPhoneNo());
-                        Console.WriteLine("Email ID : " + i.GetEmail());
+                        Console.WriteLine("Name : " + cl.GetName());
+                        Console.WriteLine("Address : " + cl.GetAddress());
+                        Console.WriteLine("City : " + cl.GetCity());
+                        Console.WriteLine("State : " + cl.GetState());
+                        Console.WriteLine("zip : " + cl.GetZip());
+                        Console.WriteLine("Contact No. : " + cl.GetPhoneNo());
+                        Console.WriteLine("Email ID : " + cl.GetEmail());
                     }
                 }
                 else
